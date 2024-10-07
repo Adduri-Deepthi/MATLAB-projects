@@ -1,0 +1,27 @@
+In this audio file is being processed.
+The following process is done throughout the project
+1. Reading an Audio File:
+The audio file is read using the "audioread" function.
+The signal is plotted with the x-axis representing the sample number 
+and the y-axis representing the amplitude of the signal, which is a typical step in signal analysis to observe how the signal behaves over time.
+
+
+2. Fourier Transform:
+The signal undergoes a Fast Fourier Transform (FFT), which converts the time-domain signal into the frequency domain.
+The magnitude squared (abs(y.^2)) of the FFT is taken, which helps analyze the power spectrum of the signal. 
+This step gives insight into the frequency components of the signal.
+
+
+3. Frequency Domain Analysis:
+Only the first half of the frequency spectrum is used (y = y(1:n/2)), as the FFT result is symmetric for real-valued signals.
+The code computes a frequency scale (f_scale) based on the sampling rate fs and the number of samples n.
+A graph of the dominant frequency components is plotted.
+
+
+4. Estimating Dominant Frequency:
+The code identifies the peak frequency component, which represents the dominant frequency in the signal.
+The dominant frequency is printed along with the frequency step (resolution), which shows how accurately the frequencies are being resolved.
+
+
+Overall, this assignment focuses on processing and analyzing an audio signal, specifically looking at its frequency content using Fourier analysis. 
+The project involves calculating the dominant frequency and analyzing the spectral properties of the audio signal.
