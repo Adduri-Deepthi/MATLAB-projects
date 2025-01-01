@@ -1,4 +1,4 @@
-This project seems to be an analysis of two audio signals using cross-correlation, a method often used in signal processing to find similarities between two signals.
+This project is analysis of two audio signals using cross-correlation, a method often used in signal processing to find similarities between two signals.
 
 Here's a breakdown of the code and what it likely aims to achieve:
 
